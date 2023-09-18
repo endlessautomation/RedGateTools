@@ -28,6 +28,7 @@ CREATE TABLE [Sales].[Customers] (
     [PostalAddressLine2]         NVARCHAR (60)                               NULL,
     [PostalPostalCode]           NVARCHAR (10)                               NOT NULL,
     [LastEditedBy]               INT                                         NOT NULL,
+    LastEditedDate               DATETIME                                    NULL,
     [ValidFrom]                  DATETIME2 (7) GENERATED ALWAYS AS ROW START NOT NULL,
     [ValidTo]                    DATETIME2 (7) GENERATED ALWAYS AS ROW END   NOT NULL,
     CONSTRAINT [PK_Sales_Customers] PRIMARY KEY CLUSTERED ([CustomerID] ASC),
